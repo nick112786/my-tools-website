@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "由資深開發者打造的免費數位效率工具箱。提供台灣支票套印工具、辦公自動化小程式免費下載。",
   // 📥 就在這裡！請把引號內換成你剛剛在 Google 複製的那串專屬金鑰
   verification: {
-    google: "<meta name="google-site-verification" content="avasxO4gpZ-Qsr4NuVUS20_YwwCtiqMKftAN15YpiKQ" />", 
+    google: "avasxO4gpZ-Qsr4NuVUS20_YwwCtiqMKftAN15YpiKQ ", 
   },
 };
 
