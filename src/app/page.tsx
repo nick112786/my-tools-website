@@ -132,8 +132,8 @@ export default function Home() {
 
           <div className="text-center mt-10">
             <p className="text-sm text-slate-400 mb-4">歡迎來信討論您的專案需求，提供免費的初步架構諮詢：</p>
-            <a href="mailto:nick112786@example.com" className="inline-block text-blue-400 hover:underline font-semibold text-lg">
-              nick112786@example.com ↗
+            <a href="mailto:nick112786@gmail.com" className="inline-block text-blue-400 hover:underline font-semibold text-lg">
+              nick112786@gmail.com
             </a>
           </div>
         </div>
