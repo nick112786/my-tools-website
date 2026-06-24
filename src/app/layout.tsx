@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,14 +13,48 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// 🌟 全站骨架 metadata：已幫你精確對齊 Google 要求的正確驗證代碼
+// ==========================================
+// 關鍵字與 SEO 標籤優化設定 (Metadata)
+// ==========================================
 export const metadata: Metadata = {
-  title: "SmartTools 數位效率工具箱",
-  description: "由資深開發者打造的免費數位效率工具箱。提供台灣支票套印工具、辦公自動化小程式免費下載。",
-  verification: {
-    // 🎯 這裡已經換成 Google 在 image_0b78fb.png 中向你索取的專屬正確代碼了！
-    google: "MBxWenqNx37SdFe3EfBZtVQA-d4Zt_BnAWUzq-n9-o", 
+  title: "精選工具箱 ｜ 高效作業管理與流程優化",
+  description: "專為工作優化打造的線上工具集。提供高效的專案排程、數據轉換與報表檢查工具，助您簡化日常工作流程，提升跨部門溝通效率。",
+  keywords: [
+    "專案管理工具",
+    "PM 工具箱",
+    "金融業專案管理",
+    "銀行 PM 工具",
+    "工作流程自動化",
+    "線上工具集",
+    "Next.js 工具網站",
+    "效率提升工具",
+    "支票管理系統",
+    "支票套印",
+    "支票列印",
+    "台灣銀行",
+    "華南銀行",
+    "新光銀行",
+    "台中銀行",
+    "富邦銀行",
+    "台新銀行",
+    "中國信託銀行",
+    "國泰世華銀行",
+    "玉山銀行",
+    "土地銀行",
+    "第一銀行",
+    "銀行支票",
+    "支票怎麼印",
+    "ERP系統",
+    "ERP軟體",
+    "取代ERP",
+    
+  ],
+  // 讓搜尋引擎爬蟲正確索引
+  robots: {
+    index: true,
+    follow: true,
   },
+
 };
 
 export default function RootLayout({
@@ -28,12 +63,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-TW" className="scroll-smooth">
+    <html lang="zh-TW" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-900 text-slate-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* 自動將 page.tsx 的首頁工具箱內容渲染於此 */}
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

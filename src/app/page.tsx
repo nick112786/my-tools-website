@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 // 🌟 全站 SEO 與 AI SEO (GEO) 佈局：強調個人開發、免費工具與客製化接案
 export const metadata: Metadata = {
-  title: 'SmartTools 數位效率工具箱｜免費商務工具下載、客製化系統開發接案',
+  title: 'Toolsbox 數位效率工具箱｜免費商務工具下載、客製化系統開發接案',
   description: '由資深開發者打造的免費數位效率工具箱。提供台灣支票套印工具、辦公自動化小程式免費下載。同時提供企業客製化網頁前端、後端系統開發、金融工具串接等接案服務。',
   keywords: ['免費工具箱', '支票套印軟體', '網頁開發接案', '客製化系統設計', '前端工程師作品集', 'PM效率工具'],
 }
@@ -13,7 +13,7 @@ export default function Home() {
     {
       id: 'check-print',
       title: '🎯 台灣支票套印小工具',
-      desc: '會計出納必備！輸入數字秒轉繁體大寫，精準對位各家銀行格式，100% 離線安全。',
+      desc: '會計出納必備！不怕支票位置跑版，精準對位，100%離線安全。',
       tag: '商務應用',
       status: '免費下載',
     },
@@ -32,7 +32,7 @@ export default function Home() {
       {/* 1. 導覽列 */}
       <nav className="bg-slate-800/80 backdrop-blur border-b border-slate-700 sticky top-0 z-50 py-4 px-6 flex justify-between items-center">
         <div className="text-xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-          SmartTools.io
+          ToolsBox.io
         </div>
         <div className="space-x-6 text-sm">
           <a href="#tools-section" className="text-slate-300 hover:text-blue-400 transition">工具首頁</a>
@@ -47,7 +47,7 @@ export default function Home() {
           用技術解決痛點，讓 <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">數位效率</span> 真正落地
         </h1>
         <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-          我是工程師，也是金融業的專案管理師。這裡存放我為了優化工作流程而開發的各式輕量化小工具，完全免費提供下載；同時提供企業客製化接案服務。
+          曾經任於生物科技企業轉型、現任金融業專案管理師。為了優化工作流程而開發的各式輕量化小工具，完全免費提供下載；同時提供企業客製化接案服務。
         </p>
         <div className="space-x-4">
           <a href="#tools-section" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition inline-block shadow-lg shadow-blue-600/20">
