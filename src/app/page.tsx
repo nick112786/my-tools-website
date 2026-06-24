@@ -90,7 +90,7 @@ export default function Home() {
                 // 🌟 修正後的安全英文路徑下載按鈕，並在 download 屬性中指定中文存檔名稱
                 <div className="bg-slate-900/60 p-4 rounded-xl border border-slate-700/60">
                   <a
-                    href="/download/支票管理系統.rar"
+                    href="/download/check-print.rar"
                     download="支票套印小工具"
                     className="w-full text-center block bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition shadow-md shadow-blue-600/10"
                   >
