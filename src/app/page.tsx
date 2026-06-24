@@ -91,10 +91,10 @@ export default function Home() {
                 <div className="bg-slate-900/60 p-4 rounded-xl border border-slate-700/60">
                   <a
                     href="/download/check-print.zip"
-                    download="支票套印小工具"
+                    download="台灣支票套印小工具.zip"
                     className="w-full text-center block bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg transition shadow-md shadow-blue-600/10"
                   >
-                    立即免費下載　(僅支援Windows)
+                    立即免費下載 (僅限Windows)
                   </a>
                 </div>
               ) : (
